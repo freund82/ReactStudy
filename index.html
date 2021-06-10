@@ -11,10 +11,37 @@
     <body>
         <div id="container"></div>
         <script type="text/babel">
-            ReactDOM.render(
+            /*ReactDOM.render(
                 <h1>Привет</h1>,
             document.querySelector("#container")
+            );*/
+            class Hi extends React.Component{
+                render(){
+                    var hiStyle={
+                        width:"600px",
+                        margin:0,
+                        margin:"auto",
+                        color:"red",
+                        fontSize:"20px",
+                        background:"green",
+                        textAlign:"center"
+                    };
+                    return(
+                        <div style={hiStyle}>
+                            <h1>Проверка</h1>
+                        </div>
+        
+                    );
+                }
+            }
+            ReactDOM.render(
+               <div>
+                <Hi/>
+                <Hi/>
+               </div>,
+                document.querySelector("#container")
             );
+            
         </script>
     </body>
 </html>
